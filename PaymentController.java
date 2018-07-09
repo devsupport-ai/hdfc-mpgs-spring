@@ -1,4 +1,4 @@
-package nl.bldn.example.springboot.helloworld.payment;
+package {{=it.packageName}}.payment;
 
 import javax.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;

@@ -1,4 +1,4 @@
-package nl.bldn.example.springboot.helloworld.payment;
+package {{=it.packageName}}.payment;
 
 import java.io.ByteArrayOutputStream;
 import org.apache.commons.codec.binary.Base64;

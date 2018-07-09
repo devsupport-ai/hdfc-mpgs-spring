@@ -1,4 +1,4 @@
-package nl.bldn.example.springboot.helloworld.payment;
+package {{=it.packageName}}.payment;
 
 import java.text.MessageFormat;
 import javax.servlet.http.HttpServletRequest;
