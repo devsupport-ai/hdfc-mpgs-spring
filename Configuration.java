@@ -41,13 +41,13 @@ public class Configuration {
     configuration.put("version", "13");
 
     // Merchant ID supplied by your payments provider
-    configuration.put("merchantId", "99141516");
+    configuration.put("merchantId", "{{=it.merchantName}}");
 
     // API username in the format below where Merchant ID is the same as above
-    configuration.put("apiUsername", "merchant.99141516");
+    configuration.put("apiUsername", "merchant.{{=it.merchantName}}");
 
     // API password which can be configured in Merchant Administration
-    configuration.put("password", "64a0ab9e14657c83463019b1a9a82619");
+    configuration.put("password", "{{=it.apiPassword}}");
 
     // [Snippet] howToConfigureSslCert - start
     // If using certificate validation, modify the following configuration settings
