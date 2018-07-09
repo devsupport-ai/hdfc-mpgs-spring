@@ -22,7 +22,7 @@ public class PaymentController {
 
     String requestUrl = parser.formRequestUrl(request, (String) Configuration.configuration.get("version"));
     if (merchant.debugMode()) {
-      logger.info("Request url: {}", requestUrl);
+      System.out.println("Request url: " + requestUrl);
     }
     Connection connection = new Connection(merchant);
 
@@ -35,7 +35,7 @@ public class PaymentController {
 
     data = parser.parse(request);
     if (merchant.debugMode()) {
-      logger.info("Data: {}", data);
+      System.out.println("Data: " + data);
     }
 
     String resp = "";
@@ -56,7 +56,7 @@ public class PaymentController {
 
     String requestUrl = parser.formRequestUrl(request, (String) Configuration.configuration.get("version"));
     if (merchant.debugMode()) {
-      logger.info("Request url: {}", requestUrl);
+      System.out.println("Request url: " + requestUrl);
     }
     Connection connection = new Connection(merchant);
 
@@ -69,7 +69,7 @@ public class PaymentController {
 
     data = parser.parse(request);
     if (merchant.debugMode()) {
-      logger.info("Data: {}", data);
+      System.out.println("Data: " + data);
     }
 
     String resp = "";
