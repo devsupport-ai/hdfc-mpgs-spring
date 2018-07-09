@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping ("payment")
 public class PaymentController {
-  private static Logger logger = LoggerFactory.getLogger(PaymentController.class);
-
   @ResponseBody
   @RequestMapping (path = "process", method = RequestMethod.POST)
   public String processPayment(HttpServletRequest request) throws Exception {
