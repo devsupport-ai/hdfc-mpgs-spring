@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping ("payment")
 public class PaymentController {
   @ResponseBody
-  @RequestMapping (path = "process", method = RequestMethod.POST)
+  @RequestMapping (value = "process", method = RequestMethod.POST)
   public String processPayment(HttpServletRequest request) throws Exception {
     Merchant merchant = new Merchant(Configuration.configuration);
     Parser parser = new Parser(merchant);
@@ -46,7 +46,7 @@ public class PaymentController {
     return resp;
   }
 
-  @RequestMapping (path = "get_payment", method = RequestMethod.POST)
+  @RequestMapping (value = "get_payment", method = RequestMethod.POST)
   public String getPaymentDetails(HttpServletRequest request) throws Exception {
     Merchant merchant = new Merchant(Configuration.configuration);
     Parser parser = new Parser(merchant);
